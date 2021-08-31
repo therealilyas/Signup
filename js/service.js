@@ -1,6 +1,5 @@
 import { auth } from './firebase.js';
 import DOM from './dom.js'
-import SERVICE from './event.js'
 
 function signUp() {
     const promise = auth.createUserWithEmailAndPassword(DOM.email.value, DOM.password.value);
@@ -19,15 +18,8 @@ function signOut() {
     auth.signOut();
 }
 
-function init() {
-    SERVICE.signup
-    SERVICE.signin
-    SERVICE.signout
-}
-
 export default {
     signUp,
     signIn,
     signOut,
-    init,
 }
