@@ -11,15 +11,20 @@ function signIn() {
     promise.catch(e => alert(e.message));
 }
 
-
 function signOut() {
     DOM.email.value = '';
     DOM.password.value = '';
     auth.signOut();
 }
 
+function init() {
+    DOM.email.value = '';
+    DOM.password.value = '';
+}
+
 export default {
     signUp,
     signIn,
     signOut,
+    init,
 }
