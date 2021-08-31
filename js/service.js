@@ -17,14 +17,8 @@ function signOut() {
     auth.signOut();
 }
 
-function init() {
-    DOM.email.value = '';
-    DOM.password.value = '';
-}
-
 export default {
     signUp,
     signIn,
     signOut,
-    init,
 }
